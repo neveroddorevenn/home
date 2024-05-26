@@ -1,0 +1,97 @@
+* {
+	text-decoration: none;
+}
+
+header,
+h2,
+ul> li> section {
+	padding: 2px;
+}
+
+* {
+	padding: 0;
+}
+
+header {
+	background-color: white;
+	text-align: center;
+	border: 1.4px solid black;
+	color: black;
+}
+
+h2 {
+	background-color: gainsboro;
+	text-align: center;
+	margin: 10px;
+	padding: 3px;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+ul > li > section {
+	border: 1.4px solid black;
+	width: 380px;
+	height:740px;
+	margin: 10px;
+
+}
+
+p {
+	line-height: 1.7;
+	word-break: keep-all;
+	margin: 10px;
+	font-size: 17px;
+}
+
+li {
+	list-style: none;
+	align-items: center;
+}
+
+div {
+	text-align: center;
+}
+
+.hm {
+	width: 25px;
+	height: 45px;
+	background-color: white;
+	text-align: center;
+	position: fixed;
+	top: 840px;
+	left: 4px;
+	color: black;
+	border-radius: 30px;
+	margin: 1px;
+    text-align: center;
+    border: 1.4px solid black;
+    writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 900px) {
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0px;
+    }
+
+    ul > li > section {
+		border: 1.4px solid black;
+		width: 300px;
+		margin-left: 0px;
+    }
+
+    p {
+		font-size: 18x;
+	}
+
+	header {
+		text-align: center;
+	}
+
+}
