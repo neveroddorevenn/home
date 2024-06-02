@@ -125,4 +125,10 @@ body {
         max-width: calc(50% - 10px);
         margin-right: 0px;
     }
+
+    .hm {
+        top: auto;
+        bottom: 20px;
+        right: 10px;
+    }
 }
