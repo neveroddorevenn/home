@@ -64,6 +64,7 @@ body {
 .text-content {
     margin-top: 10px;
     padding: 20px;
+    line-height: 1.4;
 }
 
 .image {
@@ -90,7 +91,6 @@ body {
 .text-content {
   flex: 1;
   margin-bottom: 60px;
-  line-height: 1.4;
 }
 
 .hm {
