@@ -6,36 +6,68 @@
 }
 
 
-.c:hover {
-    background-color: white;
+.c, .f, .h, .z {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.c {
     background-image: url("img/text.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #5b5f49;
+    color: black;
 }
 
-.f:hover {
-    background-color: white;
+.f {
     background-image: url("img/people.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #e8e9e1;
+    color: white;
 }
 
-.h:hover {
-    background-color: white;
+.h {
+    background-image: url("img/color.jpg");
+    color: white;
+}
+
+.z {
     background-image: url("img/none.jpg");
-    background-size: cover;
-    background-position: center;
     color: white;
 }
 
-.z:hover {
-    background-color: white;
-    background-image: url("img/none2.jpg");
-    background-size: cover;
-    background-position: center;
+.c::before, .f::before, .h::before, .z::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s;
+}
+
+.c:hover::before, .f:hover::before, .h:hover::before, .z:hover::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.c:hover, .f:hover, .h:hover, .z:hover {
     color: white;
+}
+
+h2 {
+    position: absolute;
+    writing-mode: vertical-rl;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    font-size: 10vh;
+}
+
+.c:hover h2, .f:hover h2, .h:hover h2, .z:hover h2 {
+    opacity: 1;
 }
 
 
@@ -56,32 +88,16 @@ section {
 header {
     position: absolute;
     top: 16px;
-    right: 16px;
+    left: 16px;
     z-index: 1;
     font-size: 3vh;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 30px;
     border-radius: 10px;
     padding-top: 22px;
+    padding-bottom: 15px;
 }
 
-h2 {
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 100vw;
-    text-align: center;
-    padding: 15px;
-    margin: 10px;
-}
-
-
-.pp {
-    position: absolute;
-    top: 92px;
-    right: 16px;
-    z-index: 1;
-    font-size: 1.4vh;
-
-}
 
 body {
     background-color: #fff;
@@ -92,27 +108,16 @@ body {
     header {
     position: absolute;
     top: 16px;
-    right: 20px;
+    left: 20px;
     z-index: 1;
     font-size: 2vh;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 30px;
     border-radius: 10px;
     padding-top: 22px;
+    padding-bottom: 15px;
     }
 
-
-    .pp {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    z-index: 1;
-    font-size: 1vh;
-    }
-
-    h2 {
-        font-size: 1.9vh;
-    }
 
 
 }
