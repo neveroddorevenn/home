@@ -100,7 +100,7 @@ p {
 img {
     margin-top: 10px;
     height: 550px;
-    margin: 30px;
+    margin: 20px;
     border-radius: 30px;
     max-width: 100%;
 }
@@ -128,7 +128,7 @@ img {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {ㄴ
 
     nav {
     width: 180px;
